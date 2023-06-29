@@ -1,0 +1,272 @@
+
+.homemap{
+background-image: url("/src/asset/secondnav-icon/homemap.png");
+position:fixed;
+overflow: hidden;
+top: 180px;
+bottom:-10px ;
+margin: -52px 0px 0px 0px;
+width: 598px;
+height: 390px;
+margin-left: -50px;
+display: flex;
+justify-content: flex-start;
+border: 0.7px solid #1B291F;
+}
+/* .map-left-fixed{
+    position:fixed;
+    overflow: hidden;
+} */
+.map-bottom-icon{
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    /* top: 450px; */
+    padding-top: 626px;
+    padding-left: 109px;
+    color: white;
+    border-radius: 40px;
+}
+.map-component-all{
+   margin-top: 142px;
+}
+.maptopdown-btn{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.map-side-icon{
+  
+    font-weight: bold;
+    margin: 19px -51px 0px 40px;
+
+
+  
+}
+
+.mapdest-1{
+position: absolute;
+margin: 0px 50px 0px -446px ; 
+
+}
+
+.mapdest-2{
+position: absolute;
+margin: 40px 0px 0px -410px ;
+color: black; 
+
+}
+.mapdest-3{
+position: absolute;
+margin: 200px 0px 0px -300px ; 
+
+}
+.mapdest-4{
+position: absolute;
+margin: 280px 0px 0px -490px ; 
+
+}
+.mapdest-5{
+position: absolute;
+margin: 400px 0px 0px -490px ; 
+
+
+
+
+}
+.mapdest-6{
+position: absolute;
+margin: 120px 0px 0px -490px ; 
+
+}
+.mapdest-7{
+    position: absolute;
+    margin: 400px 0px 0px -300px ; 
+    
+    }
+.mapdest-8{
+    position: absolute;
+    margin: 80px 0px 0px -250px ; 
+    
+    }
+.mapdest-9{
+    position: absolute;
+    margin: 300px 0px 0px -200px ; 
+    
+    }
+/* .mapdest-3{
+    position: absolute;
+    margin: 200px 0px 0px -300px ; 
+    
+    } */
+
+
+.map-center-vertical{
+    position: absolute;
+    border-left: 1.5px solid black;
+margin: 25px 0px 0px 600px;
+    height: 630px;
+}
+a:link { text-decoration: none;
+ }
+
+.map-dsnination-backround{
+ position: absolute;
+ border-radius:4px;
+ top:50%;
+ left:50%;
+ position: absolute; 
+ transform: translate(-50%,-50%); 
+ margin:12px 0px 0px -250px;
+}
+/* .mapdestination-all:before {
+    content: "";
+    position:absolute ;
+    width: 0px;
+    height: 0px;
+    border-top: 13px solid transparent;
+    border-right: 76px solid rgb(9, 94, 19);
+    margin:120px 0px 0px -300px;
+    border-bottom: 13px solid transparent;
+} */
+
+
+/* mapright css */
+
+
+.md-logo {
+    margin-right: 25px;
+    width: 54px;
+    height: 54px;
+    border-radius: 90%;
+    border: 2px solid #048021;
+}
+
+.side-name {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+.right-2ndcontent {
+    padding-left: 20px;
+    font-family: 'Alumni Sans';
+}
+
+.backgroundimg {
+    background-image: url();
+    height: 300px;
+    width: 300pxpx;
+}
+
+.img {
+    background-image: url(../asset/night-sky-stars-hd-wallpapu0pu\ 4.png);
+}
+.imgfont{
+    height: 20px;
+    width: 20px;
+    font-family: 'Alumni Sans';
+}
+.para4content{
+    text-align:right;
+}
+.Mright-top-profile-head-logo{
+    padding-left: 200px;
+    font-family:'Alumni sans';
+    
+}
+
+.rightside-trsnsulste-icon{
+
+    margin:-60px 0px 0px 400px;
+
+}
+.right-headof-annoucement{
+    margin:10px 169px 20px 0px;
+
+}
+.right-3rdcontent{
+    margin:0px 112px 0px 0px;
+    height: 230px;
+
+}
+.right-sixth-content{
+    margin:10px 169px 20px 0px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.right-sevent-content{
+    margin:10px 169px 20px 0px;
+
+}
+.rightside-transulate-icon{
+    margin:0px 0px 0px 399px;
+    color: #000;
+text-align: center;
+font-size: 16px;
+font-weight: 600;
+letter-spacing: 1.5px;
+
+}
+.rightside-listening-icon{
+margin:0px 420px 0px 0px;
+color: #000;
+text-align: center;
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 1.1px;
+}
+.badgefive{
+    height:18px;
+    width: 23px;
+    border-radius: 22%;
+    background-color: red;
+    color: white;
+    position: absolute;
+    font-family: 'Alumni sans';
+    align-items: center;
+    margin: 0px 0px 0px -1.5px  ;
+
+}
+
+.transulate-all{
+    padding-top: 20px;
+    color: #000;
+    font-size: 10px;
+}
+.transulate-para-content{
+    display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   font-size: 12px;
+   height: 5px;
+   
+}
+.transulate-option-btn{
+    padding-left: 430px;
+}
+.translate-icon{
+    
+    height: 20px;
+    width: 20px;
+    /* padding-right: -15px; */
+}
+.transalte-name-bold{
+  
+    font-weight: bold;
+    font-size: 14px;
+    /* padding-right: -15px; */
+}
+.transulate-option{
+    height: 20px;
+    width: 200px;
+    width:fit-content;
+        padding: 5px;
+
+}

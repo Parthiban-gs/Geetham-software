@@ -1,0 +1,153 @@
+.over-all-navbar{
+    display: flex;
+   
+    position:fixed;
+    overflow: hidden;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+  }
+  
+.nav-1-coloum-all{
+    margin:0px 0px 0px -51px;
+  
+}
+.nav-1-logo{
+padding-bottom: 11px;
+height: 65px;
+width: 50px;
+
+}
+.nav-1-dreamfocus{
+    font-family: "Alumni Sans";
+    letter-spacing: 0.1em;
+    font-size: 36Px;
+    font-weight: bold;
+    font-weight: 700;
+    margin-top:14px;
+    margin-left: 4px;
+    color: #1B291F;
+    letter-spacing:0.1em ;
+    line-height:34px ;
+   
+}
+/* .nav-all-content{
+    float: end;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+
+} */
+
+.n2-right-btn-name{
+    margin: 5px 5px 0px 0px ;
+    /* background-color: #1B291F; */
+    height: 16px;
+    width: 100%;
+   
+
+}
+.navba1-3row{
+ 
+   margin-top: 75px;
+    font-weight: bold;
+}
+.nav-2nd-content {
+    display: flex;
+    justify-content:space-around;
+    /* padding: 5px 30px 0px 0px; */
+    letter-spacing:1px;
+    color: black;
+    justify-content: space-between;
+    /* margin: 12px 67px 7px 88px; */
+    /* display:inline-block; */
+ margin: 9px 0px 0px -90px;
+ font-weight: bold;
+}
+.nav-busi-spot-icon{
+ height: 28px;
+ width: 25px ;
+  margin-left: 20px;
+  margin: 0px 0px 0px 30px;
+}
+.nav-signin{
+    color: #4285F4;
+text-align: center;
+font-size: 27px;
+font-family: Alumni Sans;
+font-weight: 700;
+letter-spacing: 2.5px;
+margin: -0px 0px -400px 0px;
+padding: -400px 400px 0px 0px;
+}
+.navba1-name{
+  color: black;
+  padding-left: 3px;
+  text-align: center;
+  margin: 0px 0px 0px 3px;
+  display: block;
+  transition: 0.4s;
+  }
+.navba1-name:hover {
+ background-color: rgb(255, 240, 253);
+  border-color: blue;
+}
+  /* bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green" */
+  
+  .navba1-3row-compo{
+ margin: 16px 0px 0px 80px;
+display: flex;
+ gap: 3px;
+ height: 2px;
+ justify-content: space-between;
+ color: black;
+  }
+
+
+a:link { 
+    text-decoration: none;
+ }
+
+
+ 
+
+/* badge  */
+.badgeone {
+    font-family: 'Alumni sans';
+    position: absolute;
+    height: 20px;
+    width: 21px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    margin: 0px 0px 0px -3.5px ;
+    font-size: small;
+
+}
+.badgetwo {
+    font-family:'Alumni sans';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    font-size: small;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    margin: -4px 0px 0px -4.7px;
+}
+.badgethree {
+    font-family: 'Alumni sans';
+    position: absolute;
+    height: 18px;
+    width: 25px;
+    font-size: small;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    margin: -0px 0px 0px -4.7px;
+
+}
