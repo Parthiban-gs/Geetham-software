@@ -1,0 +1,10 @@
+.Feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  height: 500px ;
+  color: blue;
+  width: 500px;
+}

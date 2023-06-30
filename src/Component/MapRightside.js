@@ -1,8 +1,14 @@
 import React from 'react'
 
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next'
-import TranslateBackend from '../Smallcomponent/TranslateLanguage/TranslateBackend'
+// import { useState } from 'react';
+// import { useTranslation } from 'react-i18next'
+// import axios from 'axios';
+// import { useEffect } from "react";
+// feed
+// import Feed from "../Component/Feedpost/Feed";
+
+// import TranslateBackend from '../Smallcomponent/TranslateLanguage/TranslateBackend'
+import TEXTTOSPEECH from '../Container/HomeIconsButton/TEXTTOSPEECH';
 
 import "../Component/MapRightside.css"
 import { Link } from "react-router-dom";
@@ -47,34 +53,91 @@ library.add(faSmile, faBookmark, faBell);
 
 
 
+
+
 function MapRightside() {
 
       // Translation
 
-      const languages = [
-            { value: '', text: "Options" },
-            { value: 'en', text: "English" },
-            { value: 'hi', text: "Hindi" },
-            { value: 'ml', text: "Malayalam" },
-            { value: 'fr', text: "French" },
-            { value: 'gu', text: "Gujarati" },
-            { value: 'bn', text: "Bengali" },
-            { value: 'ta', text: "Tamil" },
-            { value: 'te', text: "Telugu" },
-            { value: 'it', text: "Italian" }
-      ];
+      // const languages = [
+      //       { value: '', text: "Options" },
+      //       { value: 'en', text: "English" },
+      //       { value: 'hi', text: "Hindi" },
+      //       { value: 'ml', text: "Malayalam" },
+      //       { value: 'fr', text: "French" },
+      //       { value: 'gu', text: "Gujarati" },
+      //       { value: 'bn', text: "Bengali" },
+      //       { value: 'ta', text: "Tamil" },
+      //       { value: 'te', text: "Telugu" },
+      //       { value: 'it', text: "Italian" }
+      // ];
 
 
 
 
-      const { t } = useTranslation();
-      const [lang, setLang] = useState('en');
+      // const { t } = useTranslation();
+      // const [lang, setLang] = useState('en');
 
-      const handleChange = e => {
-            setLang(e.target.value);
-            let loc = "http://localhost:3000/";
-            window.location.replace(loc + "?lng=" + e.target.value);
-      };
+      // const handleChange = e => {
+      //       setLang(e.target.value);
+      //       let loc = "http://localhost:3000/";
+      //       window.location.replace(loc + "?lng=" + e.target.value);
+      // };
+
+
+
+      //   jagan
+
+
+      // const googleTranslateElementInit = () => {
+      //       new window.google.translate.TranslateElement(
+      //         {
+      //           pageLanguage: "en",
+      //           autoDisplay: false
+      //         },
+      //         "google_translate_element"
+      //       );
+      //     };
+      //     useEffect(() => {
+      //       var addScript = document.createElement("script");
+      //       addScript.setAttribute(
+      //         "src",
+      //         "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      //       );
+      //       document.body.appendChild(addScript);
+      //       window.googleTranslateElementInit = googleTranslateElementInit;
+      //     }, []);
+
+
+
+      // const options = {
+      //       method: 'GET',
+      //       url: 'https://google-translate1.p.rapidapi.com/language/translate/v2/languages',
+      //       headers: {
+      //         'Accept-Encoding': 'application/gzip',
+      //         'X-RapidAPI-Key': 'b43fb1616dmshb84b76f61d5c475p1f0bbejsn3964584c3c14',
+      //         'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+      //       }
+      //     };
+
+      //     try {
+      //          axios.request(options).then((transulate)=>{ 
+      //             console.log(transulate.data); 
+      //           })
+
+
+      //     } catch (error) {
+      //           console.error(error);
+      //     }
+
+
+
+      //    Audio translate textospeek
+
+
+      // const text = "Hey guys welcome to geetham software pvt ltd .";
+      const text = "Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";
+
 
 
 
@@ -316,25 +379,8 @@ function MapRightside() {
 
 
 
-
-
-
-
-
-
-
-
-
-                                                {/* <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
-    <span class="visually-hidden">unread messages</span> */}
-
-
-
                                           </div>
                                     </div>
-
-
 
 
 
@@ -343,10 +389,7 @@ function MapRightside() {
 
                                     <div class="col">
 
-
-
-
-                                          <div class="col">
+                                               <div class="col">
                                                 <div class="container">
                                                       <div class="row row-cols-auto">
                                                             <div className="col" style={{ fontFamily: 'Alumni Sans' }}>Post announcements</div>
@@ -420,7 +463,9 @@ function MapRightside() {
                                                       </h5>
 
 
-                                                      <div className='right-3rdcontent'>
+                                                      {/* post video */}
+
+                                                      {/* <div className='right-3rdcontent'>
 
 
                                                             <div class="ratio ratio-16x9">
@@ -428,7 +473,7 @@ function MapRightside() {
 
 
 
-                                                      </div>
+                                                      </div> */}
 
 
                                                       <hr></hr>
@@ -467,7 +512,12 @@ function MapRightside() {
 
 
                                                             <div className="transulate-all">
-                                                                  <h1 className='transulate-para-content' style={{ fontFamily: 'Alumni Sans', paddingTop: '50px', fontWeight: 'bold' }}>{t('Transulate')}</h1>
+
+
+
+
+
+                                                                  {/* <h1 className='transulate-para-content' style={{ fontFamily: 'Alumni Sans', paddingTop: '50px', fontWeight: 'bold' }}>{t('Transulate')}</h1> */}
                                                                   <div style={{ fontFamily: 'Alumni Sans', color: "#4285F4", paddingTop: '70px', paddingRight: "10px" }} className="rightside-listening-icon">
                                                                         Listening...
                                                                   </div>
@@ -475,7 +525,7 @@ function MapRightside() {
                                                                   <div className='transulate-option-btn'>
                                                                         <img className='translate-icon' src={translate} alt='' value={Language} />
                                                                         <span className='transalte-name-bold' style={{ fontFamily: 'Alumni Sans', }}>translate</span>
-                                                                        <div>
+                                                                        {/* <div>
                                                                               <select className='transulate-option' value={lang} onChange={handleChange}>
                                                                                     {languages.map(item => {
                                                                                           return (<option key={item.value}
@@ -483,21 +533,52 @@ function MapRightside() {
                                                                                     })}
 
                                                                               </select>
-                                                                        </div>
+                                                                        </div> */}
 
                                                                   </div>
 
 
-                                               {/* Audio player */}
+                                                                  {/* <AudioPlayer/> */}
 
-                                               {/* <AudioPlayer/> */}
+                                                                  <div>
+
+
+                                                                        <TEXTTOSPEECH text={text} />
+                                                                        <p>{text}</p>
+
+
+                                                                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                  {/* <div>
                                                                 
-                                                                
-                                                        <div>
-                                                                
-                                                              
+                                                        <div id="google_translate_element"></div>
+                                                       <h4>Start building your app. Happy Coding!</h4>    
                                                              
-                                                       </div>
+                                                       </div> */}
+
+
+
+
+
+                                                                  {/* Feed post */}
+                                                                  {/* <Feed/> */}
+
+
+
+
+
 
 
 
