@@ -377,13 +377,8 @@ function MapRightside() {
 
                                                 </div>
 
-
-
                                           </div>
                                     </div>
-
-
-
 
                                     {/* maprightSideContent */}
 
