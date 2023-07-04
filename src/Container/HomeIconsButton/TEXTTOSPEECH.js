@@ -59,7 +59,6 @@ function TEXTTOSPEECH ({ text }) {
   return (
     <div>
       <label>
-        Voice:
         <select value={voice?.name} onChange={handleVoiceChange}>
           {window.speechSynthesis.getVoices().map((voice) => (
             <option key={voice.name} value={voice.name}>

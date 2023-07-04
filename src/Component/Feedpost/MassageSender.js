@@ -6,9 +6,6 @@
 //         <div className='Massagesende__top'>
 //         <img src={person} alt="person" className='md-logo'
 
-
-
-
 //         </div>
 //         <div className='Massagesender--botton'>
 

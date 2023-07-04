@@ -8,7 +8,8 @@ import React from 'react'
 // import Feed from "../Component/Feedpost/Feed";
 
 // import TranslateBackend from '../Smallcomponent/TranslateLanguage/TranslateBackend'
-import TEXTTOSPEECH from '../Container/HomeIconsButton/TEXTTOSPEECH';
+// import TEXTTOSPEECH from '../Container/HomeIconsButton/TEXTTOSPEECH';
+import Speechtext from '../Container/HomeIconsButton/Speechtext';
 
 import "../Component/MapRightside.css"
 import { Link } from "react-router-dom";
@@ -135,8 +136,8 @@ function MapRightside() {
       //    Audio translate textospeek
 
 
-      // const text = "Hey guys welcome to geetham software pvt ltd .";
-      const text = "Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";
+      const text = "Hey guys welcome to geetham software pvt ltd .";
+      // const text = "Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";
 
 
 
@@ -460,7 +461,7 @@ function MapRightside() {
 
                                                       {/* post video */}
 
-                                                      {/* <div className='right-3rdcontent'>
+                                                      <div className='right-3rdcontent'>
 
 
                                                             <div class="ratio ratio-16x9">
@@ -468,7 +469,7 @@ function MapRightside() {
 
 
 
-                                                      </div> */}
+                                                      </div>
 
 
                                                       <hr></hr>
@@ -535,15 +536,20 @@ function MapRightside() {
 
                                                                   {/* <AudioPlayer/> */}
 
-                                                                  <div>
-
-
+                                                                  {/* <div>
                                                                         <TEXTTOSPEECH text={text} />
                                                                         <p>{text}</p>
+                                                                  </div> */}
 
 
-                                                                  </div>
+<p>     Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";</p>
 
+
+
+
+         <div>
+            <Speechtext/>
+        </div> 
 
 
 
