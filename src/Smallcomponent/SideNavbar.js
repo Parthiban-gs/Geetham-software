@@ -13,8 +13,8 @@
 //   };
 //   return (
 //     <div>
-//     <div id="mySidenav" className="sidenav" style={{  fontFamily: 'Alumni Sans' }}>
-//       <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
+//     <div id="mySidenav" classNameName="sidenav" style={{  fontFamily: 'Alumni Sans' }}>
+//       <a href="javascript:void(0)" classNameName="closebtn" onClick={closeNav}>
 //         &times;
 //       </a>
 //       <a href="#" >Find jobs</a>
@@ -52,25 +52,34 @@
 
    
 
-import React from 'react';
+// import React, { useState } from 'react';
+import "../Smallcomponent/SideNavbar.css";
+import Dropdown from "../asset/nav-secon-icons-name/dropdown.svg"
 
-const SideNavbar = () => {
+
+const SideNavbar = () => {  
+
 
   return (
-    <div>
-    <div class="dropdown">
-  <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-    i
-  </a>
+    <div >
+    <div className="dropdown-icon-d">
+  <button className="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <img src={Dropdown} alt="image" /> 
+       
+      </button>
 
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li><a class="dropdown-item" href="#">Find jobs</a></li>
-    <li><a class="dropdown-item" href="#">Blood donors</a></li>
-    <li><a class="dropdown-item" href="#">Volunteers</a></li>
-    <li><a class="dropdown-item" href="#">Social workers</a></li>
-    <li><a class="dropdown-item" href="#">Foods & Funds donors</a></li>
-    <li><a class="dropdown-item" href="#"> Nearby helpers</a></li>
+  <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a className="dropdown-item" href="#">Find jobs</a></li>
+    <li><a className="dropdown-item" href="#">Blood donors</a></li>
+    <li><a className="dropdown-item" href="#">Volunteers</a></li>
+    <li><a className="dropdown-item" href="#">Social workers</a></li>
+    <li><a className="dropdown-item" href="#">Foods & Funds donors</a></li>
+    <li><a className="dropdown-item" href="#"> Nearby helpers</a></li>
   </ul>
+  <span
+      style={{ fontSize: '0px', cursor: 'pointer' }}>
+ 
+    </span>
 </div>
 </div>
   );

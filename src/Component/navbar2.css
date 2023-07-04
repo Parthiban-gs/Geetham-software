@@ -1,7 +1,7 @@
 .navbar2-alll{
     display: flex;
     position:fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #fdfcfc;
     z-index: 3;
     width: 100%;
@@ -12,12 +12,12 @@
 .inputing {
     display: flex;
     gap: 7px;
-    margin: auto;
-    padding: 10px;
-    width: 35px;
+    /* margin: auto; */
+    /* padding: 10px; */
+    /* width: 35px; */
 }
 .nav-search-all{
-    margin: 10px 290px 0px 40px;
+    margin: -18px 290px 0px 90px;
     border-radius: 50px;
 
 }
@@ -27,12 +27,13 @@
     /* border-radius: 20%; */
     padding: 6px 0px 0px 0px;
     font-size: 10px;
-    font-family: 'Hind Madurai';
+    /* font-family: 'Hind Madurai'; */
     align-items: center;
 }
 .nav2-icons-btn{
     margin:-2px 0px 0px 0px;
     display: flex;
+    height: 15px;
   
 }
 .form-control{
@@ -47,13 +48,13 @@
     color: #212529;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
-    appearance: none;
+    /* border: 0px solid #ced4da; */
+    /* appearance: none; */
     border-radius: 0.75rem;
 }
 .from-search-btn{
     position: absolute;
-    margin: -27px 0px 20px 280px;
+    margin: -21px 0px 20px 329px;
     font-weight: 500;
 
 }
@@ -79,11 +80,9 @@
 .n2-right-btn-name {
     font-size: 10px;
    font-weight: 500;
-   
 }
 
-
-
-
-
 /* sideNavbar-pard Css */
+.sidenav-dropdown{
+    
+}

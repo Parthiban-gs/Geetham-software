@@ -19,7 +19,7 @@ function TEXTTOSPEECH ({ text }) {
     };
   }, [text]);
 
-  const handlePlay = () => {
+    const handlePlay = () => {
     const synth = window.speechSynthesis;
 
     if (isPaused) {

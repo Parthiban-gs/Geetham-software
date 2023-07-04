@@ -6,7 +6,6 @@ import MapRightside from "../Component/MapRightside";
 import Footer from "../Component/footer";
 import "../Container/Home.css"
 import Fjob from "../Container/HomeIconsButton/Fjob"
-// import LanguageTransulate from "../Smallcomponent/LanguageTransulate";
 
 
 
@@ -25,10 +24,6 @@ function Home() {
   <div className="footer-overall">
   <Footer/>
   </div>
-  {/* <Chat user={user} /> */}
-  
-  
-
     </>
   );
 }

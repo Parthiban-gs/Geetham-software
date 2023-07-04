@@ -6,20 +6,17 @@ overflow: hidden;
 top: 180px;
 bottom:-10px ;
 margin: -52px 0px 0px 0px;
-width: 598px;
+width: 578px;
 height: 390px;
 margin-left: -50px;
 display: flex;
 justify-content: flex-start;
 border: 0.7px solid #1B291F;
 }
-/* .map-left-fixed{
-    position:fixed;
-    overflow: hidden;
-} */
+
 .map-bottom-icon{
     justify-content: center;
-    gap: 10px;
+    gap: 2px;
     position: relative;
     /* top: 450px; */
     padding-top: 626px;
@@ -31,7 +28,7 @@ border: 0.7px solid #1B291F;
    margin-top: 142px;
 }
 .maptopdown-btn{
-    background-color: black;
+    /* background-color: rgb(177, 24, 24); */
     color: white;
     border-radius: 10px;
     padding-bottom: 5px;
@@ -41,9 +38,7 @@ border: 0.7px solid #1B291F;
   
     font-weight: bold;
     margin: 19px -51px 0px 40px;
-
-
-  
+ 
 }
 
 .mapdest-1{
@@ -149,9 +144,6 @@ a:link { text-decoration: none;
     justify-content: space-evenly;
 }
 
-
-
-
 .right-2ndcontent {
     padding-left: 20px;
     font-family: 'Alumni Sans';
@@ -162,7 +154,6 @@ a:link { text-decoration: none;
     height: 300px;
     width: 300pxpx;
 }
-
 .img {
     background-image: url(../asset/night-sky-stars-hd-wallpapu0pu\ 4.png);
 }
@@ -209,16 +200,16 @@ a:link { text-decoration: none;
     margin:0px 0px 0px 399px;
     color: #000;
 text-align: center;
-font-size: 16px;
+font-size: 10px;
 font-weight: 600;
-letter-spacing: 1.5px;
+/* letter-spacing: 1.5px; */
 
 }
 .rightside-listening-icon{
 margin:0px 420px 0px 0px;
 color: #000;
 text-align: center;
-font-size: 14px;
+font-size: 10px;
 font-weight: 700;
 letter-spacing: 1.1px;
 }
@@ -232,7 +223,6 @@ letter-spacing: 1.1px;
     font-family: 'Alumni sans';
     align-items: center;
     margin: 0px 0px 0px -1.5px  ;
-
 }
 
 .transulate-all{

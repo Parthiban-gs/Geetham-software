@@ -8,7 +8,9 @@ import Vector from "../asset/secondnav-icon/Vector.png"
 import Foodfunds from "../asset/secondnav-icon/VectorFood.png"
 import Heplers from "../asset/secondnav-icon/heplers.png"
 import Navsearchicon from "../asset/nav-search-icon.svg"
+// import NavDropdown from "../Smallcomponent/NavDropdown"
 import SideNavbar from "../Smallcomponent/SideNavbar"
+
 
 // import Fjob from "../Container/HomeIconsButton/Fjob"
 // import { useNavigate } from "react-router-dom";
@@ -22,18 +24,23 @@ const Navbar2 = () => {
   // };
   return (
     <>
+
+
+
     <div className='navbar2-alll'>
       <nav class="navbar  navbar-light ">
         <div class="container-fluid">
          
-      
+   
+
+        <div style={{paddingTop:"-50px"}}>
+      <SideNavbar/>
+    </div> 
            
 
 
-        {/* <div>
-      
-      <SideNavbar/>
-    </div> */}
+
+ 
 
 
 
@@ -57,7 +64,7 @@ const Navbar2 = () => {
 
 
           <div className='nav-search-all'>
-          <input type='search' style={{ fontFamily: 'Alumni Sans',height:'39px', width:'300px',  marginTop:'-5.9px',fontWeight:'300px'}} className='form-control' placeholder='Search jobs, business opportunities, investments, nearby services and profiles' /><span><a href=''> <img className='from-search-btn' src={Navsearchicon} alt="mapdes-blue"
+          <input type='search' style={{ fontFamily: 'Alumni Sans',height:'27px', width:'350px',  marginTop:'-6px',fontWeight:'280px'}} className='form-control' placeholder='Search jobs, business opportunities, investments, nearby services and profiles' /><span><a href=''> <img className='from-search-btn' src={Navsearchicon} alt="mapdes-blue"
           /></a></span>
           </div>
 
@@ -74,40 +81,40 @@ const Navbar2 = () => {
                     <ul className='list-inline'>
                   
          <Link to={"./fjob"}><li className='list-inline-item'>
-                        <button  className='nav2right-btn'><span className='n2-right-btn-name'>
+                        <button  className='nav2right-btn' style={{height:"30px"}}><span className='n2-right-btn-name'>
                           <img src={Candidate} alt="image"/>
                            Findjob </span><span  class="badgefour"><span style={{color: '#4285F4',fontWeight:"bold"}}>(</span><span>99</span><span style={{color: '#4285F4'}}>)</span></span></button>
                       </li></Link>
           <Link to="/fjob">   <li className='list-inline-item'>
-                        <button  className='nav2right-btn'>  <span className='n2-right-btn-name'><img src={Bdoner} alt="image" style={{
+                        <button  className='nav2right-btn' style={{height:"30px"}}>  <span className='n2-right-btn-name'><img src={Bdoner} alt="image" style={{
                           height: '13px',
                           width: '13px'
                           ,fontWeight:"bold"
                         }} /> Blood donors </span><span  className="badgefour"><span style={{color: '#4285F4',fontWeight:"bold"}}>(</span><span>99</span><span style={{color: '#4285F4'}}>)</span></span></button>
                       </li></Link>
         <Link to="/fjob">  <li className='list-inline-item'>
-                        <button to="" className='nav2right-btn'> <span className='n2-right-btn-name'><img src={Vector} alt="image" style={{
+                        <button to="" className='nav2right-btn'style={{height:"30px"}}> <span className='n2-right-btn-name'><img src={Vector} alt="image" style={{
                           height: '13px',
                           width: '13px'
                           ,fontWeight:"bold"
                         }} /> Volunteers</span><span  className="badgefour"><span style={{color: '#4285F4',fontWeight:"bold"}}>(</span><span>99</span><span style={{color: '#4285F4'}}>)</span></span></button>
                        </li></Link>
       <Link to="/fjob">     <li className='list-inline-item'>
-                        <button to="" className='nav2right-btn'> <span className='n2-right-btn-name'><img src={VectorSocial} alt="image" style={{
+                        <button to="" className='nav2right-btn' style={{height:"30px"}}> <span className='n2-right-btn-name'><img src={VectorSocial} alt="image" style={{
                           height: '13px',  
                           width: '13px'
                           ,fontWeight:"bold"
                         }} />Social workers</span><span  className="badgefour"><span style={{color: '#4285F4',fontWeight:"bold"}}>(</span><span>99</span><span style={{color: '#4285F4'}}>)</span></span></button>
                   </li></Link>
      <Link to="/fjob">    <li className='list-inline-item'>
-                        <button to="/findjob" className='nav2right-btn' > <span className='n2-right-btn-name'><img src={Foodfunds} alt="image" style={{
+                        <button to="/findjob" className='nav2right-btn'style={{height:"30px"}} > <span className='n2-right-btn-name'><img src={Foodfunds} alt="image" style={{
                           height: '13px',
                           width: '13px'
                           ,fontWeight:"bold"
                         }} /> Foods&Funds donors</span><span  className="badgefour"><span style={{color: '#4285F4',fontWeight:"bold"}}>(</span><span>99</span><span style={{color: '#4285F4'}}>)</span></span></button>
                  </li></Link>
      <Link to="/fjob">     <li className='list-inline-item'>
-                        <button to="" className='nav2right-btn'> <span className='n2-right-btn-name'><img src={Heplers} alt="image" style={{
+                        <button to="" className='nav2right-btn' style={{height:"30px"}}> <span className='n2-right-btn-name'><img src={Heplers} alt="image" style={{
                           height: '13px',
                           width: '13px'
                           ,fontWeight:"bold"

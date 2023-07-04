@@ -6,17 +6,11 @@ import Copyrightfoot from "../asset/mapDestinationImages/copyrightfoot.png"
 const footer = () => {
   return (
     <div className='footer-all-component'>
-
-
-
-
-
-
+             {/* 
             <br/>
             <br/>
-            
-
-            <hr></hr>
+            <hr></hr> 
+            */}
             <h6 className="footer1content">
             Jobs service     Nearby service    Business spots     Nearby announcements    Social work team    Native place announcements     Leaders talk    Business news & information    Governments announcements   Business ideas & guidance   International business network
 

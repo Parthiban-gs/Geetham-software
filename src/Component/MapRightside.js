@@ -1,16 +1,12 @@
 import React from 'react'
-
-// import { useState } from 'react';
-// import { useTranslation } from 'react-i18next'
-// import axios from 'axios';
-// import { useEffect } from "react";
-// feed
-// import Feed from "../Component/Feedpost/Feed";
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next'
+import axios from 'axios';
+import { useEffect } from "react";
 
 // import TranslateBackend from '../Smallcomponent/TranslateLanguage/TranslateBackend'
 // import TEXTTOSPEECH from '../Container/HomeIconsButton/TEXTTOSPEECH';
 import Speechtext from '../Container/HomeIconsButton/Speechtext';
-
 import "../Component/MapRightside.css"
 import { Link } from "react-router-dom";
 import Hirepeople from "../asset/maptopbtn/mapbottombtns/hirepeopls.svg"
@@ -48,42 +44,35 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons'
 import { faSmile, faBookmark } from '@fortawesome/free-solid-svg-icons';
 import Translate from '../Smallcomponent/TranslateLanguage/Translate';
-import AudioPlayer from '../Container/HomeIconsButton/AudioPlayer';
+// import AudioPlayer from '../Container/HomeIconsButton/AudioPlayer';
 library.add(faSmile, faBookmark, faBell);
-
-
-
-
 
 
 function MapRightside() {
 
       // Translation
 
-      // const languages = [
-      //       { value: '', text: "Options" },
-      //       { value: 'en', text: "English" },
-      //       { value: 'hi', text: "Hindi" },
-      //       { value: 'ml', text: "Malayalam" },
-      //       { value: 'fr', text: "French" },
-      //       { value: 'gu', text: "Gujarati" },
-      //       { value: 'bn', text: "Bengali" },
-      //       { value: 'ta', text: "Tamil" },
-      //       { value: 'te', text: "Telugu" },
-      //       { value: 'it', text: "Italian" }
-      // ];
+      const languages = [
+            { value: '', text: "Options" },
+            { value: 'en', text: "English" },
+            { value: 'hi', text: "Hindi" },
+            { value: 'ml', text: "Malayalam" },
+            { value: 'fr', text: "French" },
+            { value: 'gu', text: "Gujarati" },
+            { value: 'bn', text: "Bengali" },
+            { value: 'ta', text: "Tamil" },
+            { value: 'te', text: "Telugu" },
+            { value: 'it', text: "Italian" }
+      ];
 
+      const { t } = useTranslation();
+      const [lang, setLang] = useState('en');
 
-
-
-      // const { t } = useTranslation();
-      // const [lang, setLang] = useState('en');
-
-      // const handleChange = e => {
-      //       setLang(e.target.value);
-      //       let loc = "http://localhost:3000/";
-      //       window.location.replace(loc + "?lng=" + e.target.value);
-      // };
+      const handleChange = e => {
+            setLang(e.target.value);
+            let loc = "http://localhost:3000/";
+            window.location.replace(loc + "?lng=" + e.target.value);
+      };
 
 
 
@@ -111,33 +100,33 @@ function MapRightside() {
 
 
 
-      // const options = {
-      //       method: 'GET',
-      //       url: 'https://google-translate1.p.rapidapi.com/language/translate/v2/languages',
-      //       headers: {
-      //         'Accept-Encoding': 'application/gzip',
-      //         'X-RapidAPI-Key': 'b43fb1616dmshb84b76f61d5c475p1f0bbejsn3964584c3c14',
-      //         'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
-      //       }
-      //     };
+      const options = {
+            method: 'GET',
+            url: 'https://google-translate1.p.rapidapi.com/language/translate/v2/languages',
+            headers: {
+              'Accept-Encoding': 'application/gzip',
+              'X-RapidAPI-Key': 'b43fb1616dmshb84b76f61d5c475p1f0bbejsn3964584c3c14',
+              'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+            }
+          };
 
-      //     try {
-      //          axios.request(options).then((transulate)=>{ 
-      //             console.log(transulate.data); 
-      //           })
+          try {
+               axios.request(options).then((transulate)=>{ 
+                  console.log(transulate.data); 
+                })
 
 
-      //     } catch (error) {
-      //           console.error(error);
-      //     }
+          } catch (error) {
+                console.error(error);
+          }
 
 
 
       //    Audio translate textospeek
 
 
-      const text = "Hey guys welcome to geetham software pvt ltd .";
-      // const text = "Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";
+      // const text = "Hey guys welcome to geetham software pvt ltd .";
+      const text = "Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";
 
 
 
@@ -159,16 +148,17 @@ function MapRightside() {
                                                       {/*map-botton button*/}
 
                                                       <Link to={"./fjob"} className='LINK-map-desc-down-btn'>  <li className='list-inline-item'>
-                                                            <button to="" className='maptopdown-btn'> <span className='n2-right-btn-name'><img src={Hirepeople} alt="image" style={{
+                                                     <button to="" className='maptopdown-btn'> <span className='n2-right-btn-name'><img src={Hirepeople} alt="image" style={{
                                                                   height: '10px',
                                                                   width: '10px',
                                                                   fontFamily: 'Alumni Sans',
 
 
-                                                            }} /> Hire people</span></button>
+                                                     }} /> Hire people</span></button>
                                                       </li></Link>
                                                       <Link to={"./fjob"}>  <li className='list-inline-item'>
-                                                            <button to="" className='maptopdown-btn'> <span className='n2-right-btn-name'><img src={Imagejob} alt="image" style={{
+                                                            <button to="" className='maptopdown-btn'> <span className='n2-right-btn-name'>
+                                                                  <img src={Imagejob} alt="image" style={{
                                                                   height: '10px',
                                                                   width: '10px',
                                                                   fontFamily: 'Alumni Sans'
@@ -462,12 +452,8 @@ function MapRightside() {
                                                       {/* post video */}
 
                                                       <div className='right-3rdcontent'>
-
-
                                                             <div class="ratio ratio-16x9">
                                                         <iframe src="https://www.youtube.com/embed/Demhi2QPTPM" title="YouTube video" allowfullscreen></iframe></div>
-
-
 
                                                       </div>
 
@@ -511,17 +497,13 @@ function MapRightside() {
 
 
 
+                                                                  <h1 className='transulate-para-content' style={{ fontFamily: 'Alumni Sans', paddingTop: '50px', fontWeight: 'bold' }}>{t('Transulate')}</h1>
+                                                             
 
-
-                                                                  {/* <h1 className='transulate-para-content' style={{ fontFamily: 'Alumni Sans', paddingTop: '50px', fontWeight: 'bold' }}>{t('Transulate')}</h1> */}
-                                                                  <div style={{ fontFamily: 'Alumni Sans', color: "#4285F4", paddingTop: '70px', paddingRight: "10px" }} className="rightside-listening-icon">
-                                                                        Listening...
-                                                                  </div>
-
-                                                                  <div className='transulate-option-btn'>
+                                                     <div className='transulate-option-btn'>
                                                                         <img className='translate-icon' src={translate} alt='' value={Language} />
                                                                         <span className='transalte-name-bold' style={{ fontFamily: 'Alumni Sans', }}>translate</span>
-                                                                        {/* <div>
+                                                                        <div>
                                                                               <select className='transulate-option' value={lang} onChange={handleChange}>
                                                                                     {languages.map(item => {
                                                                                           return (<option key={item.value}
@@ -529,9 +511,13 @@ function MapRightside() {
                                                                                     })}
 
                                                                               </select>
-                                                                        </div> */}
+                                                                        </div>
 
                                                                   </div>
+
+
+
+                                                             
 
 
                                                                   {/* <AudioPlayer/> */}
@@ -541,47 +527,36 @@ function MapRightside() {
                                                                         <p>{text}</p>
                                                                   </div> */}
 
+<br/>
+<br/>
+<br/>
+<br/>
+<p>  Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";</p>
 
-<p>     Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";</p>
-
-
-
+ 
 
          <div>
             <Speechtext/>
         </div> 
 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
 
 
 
-
-
-
-
-
-
-
-                                                                  {/* <div>
-                                                                
+                                                       {/* <div>
                                                         <div id="google_translate_element"></div>
                                                        <h4>Start building your app. Happy Coding!</h4>    
-                                                             
                                                        </div> */}
 
 
 
 
 
-                                                                  {/* Feed post */}
-                                                                  {/* <Feed/> */}
-
-
-
-
-
-
-
+                                                                
 
 
 
@@ -591,7 +566,6 @@ function MapRightside() {
                                                       </p>
 
                                                       <div>
-
 
 
                                                             <div>
