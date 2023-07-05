@@ -35,10 +35,10 @@ const Speechtext = () => {
 
 
 
-	{/* <div> <audio controls  >
+	<div> <audio controls  >
     <source src="http://physical-authority.surge.sh/music/2.mp3"/>
     </audio>
-	</div> */}
+	</div>
 
 
 {/* 

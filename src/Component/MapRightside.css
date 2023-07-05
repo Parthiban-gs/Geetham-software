@@ -240,6 +240,7 @@ letter-spacing: 1.1px;
 }
 .transulate-option-btn{
     padding-left: 430px;
+    margin-top: 90px;
 }
 .translate-icon{
     
@@ -259,4 +260,7 @@ letter-spacing: 1.1px;
     width:fit-content;
         padding: 5px;
 
+}
+.read-more-option-cs{
+   margin-top: 50px;
 }

@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next'
 import axios from 'axios';
 import { useEffect } from "react";
 
-// import TranslateBackend from '../Smallcomponent/TranslateLanguage/TranslateBackend'
+import TranslateBackend from '../Smallcomponent/TranslateLanguage/TranslateBackend'
+// import Audiomp3 from '../Smallcomponent/TranslateLanguage/Audiomp3'
 // import TEXTTOSPEECH from '../Container/HomeIconsButton/TEXTTOSPEECH';
 import Speechtext from '../Container/HomeIconsButton/Speechtext';
 import "../Component/MapRightside.css"
@@ -128,6 +129,15 @@ function MapRightside() {
       // const text = "Hey guys welcome to geetham software pvt ltd .";
       const text = "Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";
 
+
+
+      // read more..
+
+      const [isShowMore, setIsShowMore] = useState(false);
+
+  const toggleReadMoreLess = () => {
+    setIsShowMore(!isShowMore);
+  };
 
 
 
@@ -522,18 +532,31 @@ function MapRightside() {
 
                                                                   {/* <AudioPlayer/> */}
 
-                                                                  {/* <div>
+                                                                  {/*<div>
                                                                         <TEXTTOSPEECH text={text} />
                                                                         <p>{text}</p>
-                                                                  </div> */}
+                                                                  </div>*/}
 
 <br/>
 <br/>
 <br/>
 <br/>
-<p>  Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";</p>
+<div>
+<p  style={{marginTop:"-50px"}}>  Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service.."  Core java, Advance java, </p>
+{isShowMore && (
+<p>Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";</p>
 
- 
+
+)} <a  style={{color:"blur", paddingBottom:"20px"}} onClick={toggleReadMoreLess}>
+{isShowMore ? "Read Less" : "Read More"}
+</a>
+
+
+</div>
+
+
+
+
 
          <div>
             <Speechtext/>
@@ -547,19 +570,13 @@ function MapRightside() {
 
 
 
-                                                       {/* <div>
+                                                       <div>
                                                         <div id="google_translate_element"></div>
                                                        <h4>Start building your app. Happy Coding!</h4>    
-                                                       </div> */}
+                                                       </div>
 
 
-
-
-
-                                                                
-
-
-
+               {/*<Audiomp3/>*/}
                                                             </div>
 
 
