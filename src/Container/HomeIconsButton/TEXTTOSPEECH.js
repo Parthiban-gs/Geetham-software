@@ -1,83 +1,111 @@
-import React, { useState, useEffect } from "react";
+// import React, { useEffect } from 'react';
 
-function TEXTTOSPEECH ({ text }) {
-  const [isPaused, setIsPaused] = useState(false);
-  const [utterance, setUtterance] = useState(null);
-  const [voice, setVoice] = useState(null);
+// const TextToSpeech = () => {
 
-
-  useEffect(() => {
-    const synth = window.speechSynthesis;
-    const u = new SpeechSynthesisUtterance(text);
-    const voices = synth.getVoices();
-
-    setUtterance(u);
-    setVoice(voices[0]);
-
-    return () => {
-      synth.cancel();
-    };
-  }, [text]);
-
-    const handlePlay = () => {
-    const synth = window.speechSynthesis;
-
-    if (isPaused) {
-      synth.resume();
-    } else {
-      utterance.voice = voice;
+//   const handleOnClick =()=>{ 
+//     // const text ="HI welcome to gettham soft pvt ltd";
+//     const text ="Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";
     
-      synth.speak(utterance);
-    }
+    
+//     const value = new  SpeechSynthesisUtterance(text);
+//     window.speechSynthesis.speak(value);
+   
+// }
 
-    setIsPaused(false);
-  };
 
-  const handlePause = () => {
-    const synth = window.speechSynthesis;
 
-    synth.pause();
 
-    setIsPaused(true);
-  };
 
-  const handleStop = () => {
-    const synth = window.speechSynthesis;
 
-    synth.cancel();
 
-    setIsPaused(false);
-  };
-
-  const handleVoiceChange = (event) => {
-    const voices = window.speechSynthesis.getVoices();
-    setVoice(voices.find((v) => v.name === event.target.value));
-  };
-
- 
-
-  return (
-    <div>
-      <label>
-        <select value={voice?.name} onChange={handleVoiceChange}>
-          {window.speechSynthesis.getVoices().map((voice) => (
-            <option key={voice.name} value={voice.name}>
-              {voice.name}
-            </option>
-          ))}
-        </select>
-      </label>
+//   useEffect(() => {
+//     const initializeTextToSpeech = () => {
+//       const $voicelist = window.$('#voices');
+//       const text ="Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";
+     
+//     const value = new  SpeechSynthesisUtterance(text);
+//     window.speechSynthesis.speak(value);
 
       
 
+//       if (!('speechSynthesis' in window)) {
+//         const modal = window.$('#modal1');
+//         modal.modal();
+//         modal.modal('open');
+//         return;
+//       }
 
+//       const synthesis = window.speechSynthesis;
+
+//       const populateVoices = () => {
+//         if ($voicelist.find('option').length === 0) {
+//           synthesis.getVoices().forEach((voice, index) => {
+//             const $option = window
+//               .$
+//               .parseHTML(`< value="${index}">${voice.name}${voice.default ? ' (default)' : ''}`);
+//             $voicelist.append();
+//           });
+
+//           $voicelist.material_select();
+//         }
+//       };
+
+//       populateVoices();
+
+//       if (synthesis.onvoiceschanged !== undefined) {
+//         synthesis.onvoiceschanged = populateVoices;
+//       }
+
+//       const speakButton = window.$('#speak');
+//       speakButton.click(() => {
+//         const text ="Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";
+     
+//         const value = new  SpeechSynthesisUtterance(text);
+//         window.speechSynthesis.speak(value);
     
+//         const msg = new SpeechSynthesisUtterance();
+//         const voices = synthesis.getVoices();
+//         msg.voice = voices[window.$('#voices').val()];
+ 
+//         msg.onend = (e) => {
+//           console.log('Finished in ' + e.elapsedTime + ' seconds.');
+//         };
 
-      <button onClick={handlePlay}>{isPaused ? "Resume" : "Play"}</button>
-      <button onClick={handlePause}>Pause</button>
-      <button onClick={handleStop}>Stop</button>
-    </div>
-  );
-};
+//         synthesis.speak(msg);
+//       });
+//     };
 
-export default TEXTTOSPEECH;
+//   //   initializeTextToSpeech();
+//   // }, []);
+                                                
+
+//   return (
+//     <div className="container">
+//       <div className="row">
+//         <nav>
+//           <div className="nav-wrapper">
+//             <div className="col s12">
+//               <a href="#" className="brand-logo">Text to speech example</a>
+//             </div>
+//           </div>
+//         </nav>
+//       </div>
+//       <form className="col s8 offset-s2">
+       
+      
+        
+//         <a href="#" id="speak" className="waves-effect waves-light btn">Speak</a>
+//       </form>
+//       <div id="modal1" className="modal">
+//         <h4>Speech Synthesis not supported</h4>
+//         <p>Your browser does not support speech synthesis.</p>
+//         <p>We recommend you use Google Chrome.</p>
+//         <div className="action-bar">
+//           <a href="#" className="waves-effect waves-green btn-flat modal-action modal-close">Close</a>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default TextToSpeech;

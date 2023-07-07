@@ -2,6 +2,10 @@ import React from "react";
 // import { useSpeechSynthesis } from "react-speech-kit";
 import   "../HomeIconsButton/Speechtext.css"
 // import { useState } from "react";
+// import SpeakerIcon from '../asset/SpeakerIcon.svg';
+
+
+
 
 const Speechtext = () => {
 	// const [text, setText] = useState('');
@@ -16,9 +20,12 @@ const Speechtext = () => {
         window.speechSynthesis.speak(value);
        
     }
+  
+
+
 
 	return (
-		<div className="audio-all-ui-a">
+		<div className="">
           
 				{/* <p >Text To Speech Converter Using React Js</p> */}
 		
@@ -29,26 +36,24 @@ const Speechtext = () => {
 
 
           <div >
-        <button className="speechbuttonStye" onClick={handleOnClick}>play</button>
-
+        <a className="speechbuttonStye" onClick={handleOnClick}>play</a>
+        {/* <img src={SpeakerIcon} alt='img' /> */}
         </div>
 
+      
 
 
-	<div> <audio controls  >
-    <source src="http://physical-authority.surge.sh/music/2.mp3"/>
-    </audio>
-	</div>
 
-
-{/* 
-    <audio
+    <audio className="audo-demo"
         controls
-        src="" onClick={handleOnClick}>
-            <a href="">
-                Download audio
-            </a>
-    </audio> */}
+        onClick={handleOnClick}>
+     <a className="speechbuttonStye" onClick={handleOnClick}>play</a>
+
+    </audio>
+
+<br/>
+
+<br/>
 
 
 								

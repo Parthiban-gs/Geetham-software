@@ -45,7 +45,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell } from '@fortawesome/free-solid-svg-icons'
 import { faSmile, faBookmark } from '@fortawesome/free-solid-svg-icons';
 import Translate from '../Smallcomponent/TranslateLanguage/Translate';
-// import AudioPlayer from '../Container/HomeIconsButton/AudioPlayer';
+import SpeakerIcon from '../asset/SpeakerIcon.svg';
+
 library.add(faSmile, faBookmark, faBell);
 
 
@@ -105,21 +106,21 @@ function MapRightside() {
             method: 'GET',
             url: 'https://google-translate1.p.rapidapi.com/language/translate/v2/languages',
             headers: {
-              'Accept-Encoding': 'application/gzip',
-              'X-RapidAPI-Key': 'b43fb1616dmshb84b76f61d5c475p1f0bbejsn3964584c3c14',
-              'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+                  'Accept-Encoding': 'application/gzip',
+                  'X-RapidAPI-Key': 'b43fb1616dmshb84b76f61d5c475p1f0bbejsn3964584c3c14',
+                  'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
             }
-          };
+      };
 
-          try {
-               axios.request(options).then((transulate)=>{ 
-                  console.log(transulate.data); 
-                })
+      try {
+            axios.request(options).then((transulate) => {
+                  console.log(transulate.data);
+            })
 
 
-          } catch (error) {
-                console.error(error);
-          }
+      } catch (error) {
+            console.error(error);
+      }
 
 
 
@@ -135,9 +136,9 @@ function MapRightside() {
 
       const [isShowMore, setIsShowMore] = useState(false);
 
-  const toggleReadMoreLess = () => {
-    setIsShowMore(!isShowMore);
-  };
+      const toggleReadMoreLess = () => {
+            setIsShowMore(!isShowMore);
+      };
 
 
 
@@ -154,25 +155,26 @@ function MapRightside() {
                                           <div className='homemap'>
                                                 <div className="map-center-vertical"></div>
                                                 <div className='map-bottom-icon'>
+                                                      <vl></vl>
 
                                                       {/*map-botton button*/}
 
                                                       <Link to={"./fjob"} className='LINK-map-desc-down-btn'>  <li className='list-inline-item'>
-                                                     <button to="" className='maptopdown-btn'> <span className='n2-right-btn-name'><img src={Hirepeople} alt="image" style={{
+                                                            <button to="" className='maptopdown-btn'> <span className='n2-right-btn-name'><img src={Hirepeople} alt="image" style={{
                                                                   height: '10px',
                                                                   width: '10px',
                                                                   fontFamily: 'Alumni Sans',
 
 
-                                                     }} /> Hire people</span></button>
+                                                            }} /> Hire people</span></button>
                                                       </li></Link>
                                                       <Link to={"./fjob"}>  <li className='list-inline-item'>
                                                             <button to="" className='maptopdown-btn'> <span className='n2-right-btn-name'>
                                                                   <img src={Imagejob} alt="image" style={{
-                                                                  height: '10px',
-                                                                  width: '10px',
-                                                                  fontFamily: 'Alumni Sans'
-                                                            }} /> Jobs</span></button>
+                                                                        height: '10px',
+                                                                        width: '10px',
+                                                                        fontFamily: 'Alumni Sans'
+                                                                  }} /> Jobs</span></button>
                                                       </li></Link>
                                                       <Link to={"./fjob"}>  <li className='list-inline-item'>
                                                             <button to="" className='maptopdown-btn'> <span className='n2-right-btn-name'><img src={Filter} alt="image" style={{
@@ -385,7 +387,7 @@ function MapRightside() {
 
                                     <div class="col">
 
-                                               <div class="col">
+                                          <div class="col">
                                                 <div class="container">
                                                       <div class="row row-cols-auto">
                                                             <div className="col" style={{ fontFamily: 'Alumni Sans' }}>Post announcements</div>
@@ -463,7 +465,7 @@ function MapRightside() {
 
                                                       <div className='right-3rdcontent'>
                                                             <div class="ratio ratio-16x9">
-                                                        <iframe src="https://www.youtube.com/embed/Demhi2QPTPM" title="YouTube video" allowfullscreen></iframe></div>
+                                                                  <iframe src="https://www.youtube.com/embed/Demhi2QPTPM" title="YouTube video" allowfullscreen></iframe></div>
 
                                                       </div>
 
@@ -508,9 +510,9 @@ function MapRightside() {
 
 
                                                                   <h1 className='transulate-para-content' style={{ fontFamily: 'Alumni Sans', paddingTop: '50px', fontWeight: 'bold' }}>{t('Transulate')}</h1>
-                                                             
 
-                                                     <div className='transulate-option-btn'>
+
+                                                                  <div className='transulate-option-btn'>
                                                                         <img className='translate-icon' src={translate} alt='' value={Language} />
                                                                         <span className='transalte-name-bold' style={{ fontFamily: 'Alumni Sans', }}>translate</span>
                                                                         <div>
@@ -527,7 +529,7 @@ function MapRightside() {
 
 
 
-                                                             
+
 
 
                                                                   {/* <AudioPlayer/> */}
@@ -537,55 +539,68 @@ function MapRightside() {
                                                                         <p>{text}</p>
                                                                   </div>*/}
 
-<br/>
-<br/>
-<br/>
-<br/>
-<div>
-<p  style={{marginTop:"-50px"}}>  Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service.."  Core java, Advance java, </p>
-{isShowMore && (
-<p>Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";</p>
+                                                                  <br />
+                                                                  <br />
+                                                                  <br />
+                                                                  <br />
+                                                                  <p cl>  Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service.."  Core java, Advance java, </p>
+
+                                                                  <div className='map-right-readmore'>
+                  
+                                                                        {isShowMore && (
+                                                                              <p>Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";</p>
 
 
-)} <a  style={{color:"blur", paddingBottom:"20px"}} onClick={toggleReadMoreLess}>
-{isShowMore ? "Read Less" : "Read More"}
-</a>
+                                                                        )} <a style={{ color: "blur", paddingBottom: "20px" }} onClick={toggleReadMoreLess}>
+                                                                              {isShowMore ? "Read Less" : "Read More"}
+                                                                        </a>
 
 
-</div>
-
-
-
-
-
-         <div>
-            <Speechtext/>
-        </div> 
-
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+                                                                  </div>
 
 
 
 
-                                                       <div>
-                                                        <div id="google_translate_element"></div>
-                                                       <h4>Start building your app. Happy Coding!</h4>    
-                                                       </div>
+
+                                                                  <div>
+                                                                     <a > <img src={SpeakerIcon} alt='img' /> <Speechtext /></a> 
+                                                                     
+                                                                  </div>
 
 
-               {/*<Audiomp3/>*/}
-                                                            </div>
+                                                                  
+
+                                                                  <br />
+                                                                  <br />
+                                                                  <br />
+                                                                  <br />
+                                                                  <br />
+                                                                  <br />
+                                                                  <br />
+                                                                  <br />
 
 
-                                                      </p>
-
-                                                      <div>
 
 
-                                                            <div>
+                                                                  <div>
+                                                                        <div id="google_translate_element"></div>
+                                                                        <h4>Start building your app. Happy Coding!</h4>
+                                                                  </div>
+
+
+                                                                  {/* <Audiomp3/> */}
+
+                                                                 
+                                                              
+                                                                      </div>
+
+
+                                                                   </p>
+
+                                                                      <div>
+
+
+                                                                 <div>
 
 
                                                             </div>

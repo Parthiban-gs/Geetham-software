@@ -1,0 +1,57 @@
+
+
+
+
+  .signpage-leftside-all{
+    margin-top: 40px;
+
+   
+  }
+  .signin-left-cont-heading1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+   height : 42px;
+   /* top: 10308px; */
+   margin-left:100px;
+   padding: 10px;
+   }
+   .signleftpage-cont-3{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 20px 0px 0px 0px;
+   }
+   .signleftpage-cont-4{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px 0px 0px 0px;
+   }
+   .signleftpage-cont-5{
+    /* display: flex;
+     justify-content: center;
+     align-items: center; */
+     margin: 50px 0px 0px 0px;
+   }
+   .signleftpage-cont-learnmore{
+    /* width: 1500px; */
+/* height: 1069px; */
+margin-top: 30px;
+/* left: 27489.974609375px; */
+border-radius: 10px;
+
+   }
+
+
+
+
+
+
+
+
+
+   .signin-form{
+    margin-top: 50px;
+   }

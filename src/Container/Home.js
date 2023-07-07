@@ -7,6 +7,7 @@ import Footer from "../Component/footer";
 import "../Container/Home.css"
 import Fjob from "../Container/HomeIconsButton/Fjob"
 import Audiomp3 from "../Smallcomponent/TranslateLanguage/Audiomp3"
+import TextToSpeech from "./HomeIconsButton/TEXTTOSPEECH";
 
 
 
@@ -26,9 +27,7 @@ function Home() {
   <Footer/>
   </div>
     
-  {/* <div className="footer-overall">
-  <Audiomp3/>
-  </div> */}
+  {/* <TextToSpeech/> */}
     </>
   );
 }
