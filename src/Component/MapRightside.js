@@ -285,83 +285,7 @@ function MapRightside() {
 
                                                 </div>
 
-                                                {/* mapdestination */}
-
-                                                {/* <div className='mapdestination-all'>
-                                                       <ul>
-
-                                                       <ol className='mapdest-2'>
-                                                                  <img src={Mapdesblue} alt="mapdes-blue" style={{
-                                                                        //  height: '77px',
-                                                                        //  width: '77x'
-                                                                        width: "159px",
-                                                                        height: "69.02px"
-                                                                  }} />
-                                                            </ol> 
-                                                              <ol className='mapdest-1'>
-                                                                  <img src={Mapdestination} alt="mapdes-green" style={{
-                                                                        width: "159px",
-                                                                        height: "69.02px"
-                                                                  }} />
-                                                             </ol> 
-                                                             
-                                                              <ol className='mapdest-3'>
-                                                                  <img src={Mapdesblue} alt="mapdes-blue" style={{
-                                                                        width: "159px",
-                                                                        height: "69.02px"
-                                                                  }} />
-                                                            </ol> 
-                                                            <ol className='mapdest-4'>
-                                                                  <img src={Mapdesblue} alt="mapdes-blue" style={{
-                                                                        width: "159px",
-                                                                        height: "69.02px"
-                                                                  }} />
-                                                            </ol> 
-                                                             <ol className='mapdest-5'>
-                                                                  <img src={Mapdesblue} alt="mapdes-blue" style={{
-                                                                        width: "159px",
-                                                                        height: "69.02px"
-                                                                  }} />
-                                                            </ol> 
-                                                          <ol className='mapdest-6'>
-                                                                  <img src={Mapdesblue} alt="mapdes-blue" style={{
-                                                                        width: "159px",
-                                                                        height: "69.02px"
-                                                                  }} />
-                                                            </ol> 
-                                                            <ol className='mapdest-7'>
-                                                                  <img src={Mapdesblue} alt="mapdes-blue" style={{
-                                                                        width: "159px",
-                                                                        height: "69.02px"
-                                                                  }} />
-                                                                   </ol> 
-                                                             
-                                                                    <ol className='mapdest-8'>
-                                                                  <img src={Mapdesblue} alt="mapdes-blue" style={{
-                                                                        width: "159px",
-                                                                        height: "69.02px"
-                                                                  }} />
-                                                                  </ol> 
-                                                           
-                                                              <ol className='mapdest-9'>
-                                                                  <img src={Mapdesblue} alt="mapdes-blue" style={{
-                                                                        width: "159px",
-                                                                        height: "69.02px"
-                                                                  }} />
-                                                                        </ol> 
-                                                         
-
-
-                                                      </ul> 
-                                                </div> */}
-
-
-
-                                                {/* <div className='mapdestination-all'>
-                                                     <div className='map-desnination-backround'>
-
-                                                     </div>
-                                                </div> */}
+                                             
 
 
 
@@ -570,6 +494,7 @@ function MapRightside() {
                                                                   <br />
                                                                   <br />
                                                                   <Voice/>
+
                                                                   {/* <p cl>  Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service.."  Core java, Advance java, </p> */}
                                                                   <br />
                                                                   <br />
