@@ -243,14 +243,15 @@ letter-spacing: 1.1px;
    
 }
 .transulate-option-btn{
+   
     padding-left: 430px;
     margin-top: 50px;
 }
 .translate-icon{
-    
-    height: 20px;
-    width: 20px;
-    /* padding-right: -15px; */
+    font-weight: 400;
+    height: 16px;
+    width: 16px;
+    padding-right: -15px;
 }
 .transalte-name-bold{
   
@@ -294,4 +295,20 @@ letter-spacing: 1.1px;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.9px;
+}
+.profile-btton-backround{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+     height: 25px;
+    width: 75px; 
+ 
+}
+.map-right-prf-third-contant{
+    margin: -18px 5px 0px 0px;
 }

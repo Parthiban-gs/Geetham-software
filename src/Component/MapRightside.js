@@ -4,10 +4,9 @@ import { useTranslation } from 'react-i18next'
 import axios from 'axios';
 import { useEffect } from "react";
 
-import TranslateBackend from '../Smallcomponent/TranslateLanguage/TranslateBackend'
-// import Audiomp3 from '../Smallcomponent/TranslateLanguage/Audiomp3'
-// import TEXTTOSPEECH from '../Container/HomeIconsButton/TEXTTOSPEECH';
-import Speechtext from '../Container/HomeIconsButton/Speechtext';
+// import TranslateBackend from '../Smallcomponent/TranslateLanguage/TranslateBackend'
+
+import Voice from '../Component/Voice';
 import "../Component/MapRightside.css"
 import { Link } from "react-router-dom";
 import Hirepeople from "../asset/maptopbtn/mapbottombtns/hirepeopls.svg"
@@ -46,6 +45,7 @@ import { faBell } from '@fortawesome/free-solid-svg-icons'
 import { faSmile, faBookmark } from '@fortawesome/free-solid-svg-icons';
 import Translate from '../Smallcomponent/TranslateLanguage/Translate';
 import SpeakerIcon from '../asset/SpeakerIcon.svg';
+import Dateandtimefronticon from '../asset/maprightside-icon/dateandtimefronticon.svg';
 
 library.add(faSmile, faBookmark, faBell);
 
@@ -417,15 +417,20 @@ function MapRightside() {
                                                                         <FontAwesomeIcon icon={faBookmark} />
                                                                   </div>
                                                                   <div className='right-2ndcontent'>
-                                                                        <p>
+                                                                        <p style={{fontSize:"14px", paddingRight:'50px'}}>
                                                                               I am free now call me will discus business,investments,jobs
                                                                         </p>
                                                                   </div>
-                                                                  <div>
-                                                                        <span>
+                                                                  <div className='map-right-prf-third-contant' >
+                                                                       <span >
                                                                               <li className='list-inline-item'>
-                                                                                    <span>
-                                                                                          <img src={India} alt='' /><span style={{ fontFamily: 'Alumni Sans', fontWeight: '400', letterSpacing: '0.1em' }}>chennai,india</span>
+                                                                                    <span >
+                                                                                         <span style={{ fontFamily: 'Alumni Sans',color: "#898989", fontSize:"14px",margin:"-12px 0px 0px -50px", position:"absolute" }} >11:30 am</span>
+                                                                                    </span>
+                                                                              </li>
+                                                                              <li className='list-inline-item'>
+                                                                                    <span style={{ fontFamily: 'Alumni Sans', fontWeight: '400', letterSpacing: '0.1em', margin:"-10px 10px 0px 0px "}}>
+                                                                                          <img src={India} alt='' /><span >chennai,india</span>
                                                                                     </span>
                                                                               </li>
                                                                               <li className='list-inline-item'>
@@ -435,13 +440,43 @@ function MapRightside() {
                                                                               </li>
                                                                               <li className='list-inline-item'>
                                                                                     <span>
-                                                                                          <img src={user} alt='' /><span style={{ fontFamily: 'Alumni Sans', fontWeight: '400', letterSpacing: '0.1em' }}>177</span>
+                                                                                          <img src={user} alt='' /><span style={{ fontFamily: 'Alumni Sans', fontWeight: '400', letterSpacing: '0.1em' }}>177K Followers</span>
+                                                                                    </span>
+                                                                              </li>
+                                                                              <li className='list-inline-item'>
+                                                                                    <span style={{ fontFamily: 'Alumni Sans', fontWeight: '600', letterSpacing: '0.1em', color: 'green',margin:"-30px 100px 0px 10px" , position:"absolute"}}>
+                                                                                          <img src={verified} alt='' /><span >verified</span>
+                                                                                    </span>
+                                                                              </li>
+                                                                        </span>
+
+                                                                  </div>
+                                                                  <div >
+                                                                       <span >
+                                                                              <li className='list-inline-item'>
+                                                                                    <span >
+                                                                                         <span style={{ fontFamily: 'Alumni Sans',color: "#898989", fontSize:"14px",margin:"-15px 0px 0px -42px", position:"absolute", color:"#538DFD" }} >View profile</span>
+                                                                                    </span>
+                                                                              </li>
+                                                                              <li className='list-inline-item'>
+                                                                                    <span style={{ fontFamily: 'Alumni Sans', fontWeight: '300',  margin:"-10px 30px 0px 0px "}}>
+                                                                                          <img src={Dateandtimefronticon} alt='' /><span >12 Dec 2023 </span>
                                                                                     </span>
                                                                               </li>
                                                                               <li className='list-inline-item'>
                                                                                     <span>
-                                                                                          <img src={verified} alt='' /><span style={{ fontFamily: 'Alumni Sans', fontWeight: '600', letterSpacing: '0.1em', color: 'green' }}>verified</span>
+                                                                                          <img src={location} alt='' /><span style={{ fontFamily: 'Alumni Sans', fontWeight: '400',  }}>13 km</span>
                                                                                     </span>
+                                                                              </li>
+                                                                              <li  className='list-inline-item'>
+                                                                                    <button  className='profile-btton-backround' style={{ marginLeft:"77px"}}>
+                                                                                          <img style={{ fontFamily: 'Alumni Sans',  }} src={user} alt='' /><span style={{ fontFamily: 'Alumni Sans',  height:"25", width:"50px" }}>Follow</span>
+                                                                                    </button>
+                                                                              </li>
+                                                                              <li   className='list-inline-item'>
+                                                                                    <button className='profile-btton-backround' style={{position:"absolute",marginTop:"-18px"}}>
+                                                                                          <img style={{ fontFamily: 'Alumni Sans',  height:"25", width:"50px" }} src={verified} alt='' /><span style={{ fontFamily: 'Alumni Sans',  height:"25", width:"50px" ,}} >+Partners</span>
+                                                                                    </button>
                                                                               </li>
                                                                         </span>
 
@@ -530,21 +565,16 @@ function MapRightside() {
 
 
 
-
-
-                                                                  {/* <AudioPlayer/> */}
-
-                                                                  {/*<div>
-                                                                        <TEXTTOSPEECH text={text} />
-                                                                        <p>{text}</p>
-                                                                  </div>*/}
-
                                                                   <br />
                                                                   <br />
                                                                   <br />
                                                                   <br />
-                                                                  <p cl>  Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service.."  Core java, Advance java, </p>
-
+                                                                  <Voice/>
+                                                                  {/* <p cl>  Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service.."  Core java, Advance java, </p> */}
+                                                                  <br />
+                                                                  <br />
+                                                                  <br />
+                                                                  <br />
                                                                   <div className='map-right-readmore'>
                   
                                                                         {isShowMore && (
@@ -562,10 +592,10 @@ function MapRightside() {
 
 
 
-                                                                  <div>
+                                                                  {/* <div>
                                                                      <a > <img src={SpeakerIcon} alt='img' /> <Speechtext /></a> 
                                                                      
-                                                                  </div>
+                                                                  </div> */}
 
 
                                                                   

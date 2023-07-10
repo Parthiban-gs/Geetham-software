@@ -6,8 +6,7 @@ import MapRightside from "../Component/MapRightside";
 import Footer from "../Component/footer";
 import "../Container/Home.css"
 import Fjob from "../Container/HomeIconsButton/Fjob"
-import Audiomp3 from "../Smallcomponent/TranslateLanguage/Audiomp3"
-import TextToSpeech from "./HomeIconsButton/TEXTTOSPEECH";
+// import TextToSpeech from "./HomeIconsButton/TEXTTOSPEECH";
 
 
 
@@ -26,8 +25,7 @@ function Home() {
   <div className="footer-overall">
   <Footer/>
   </div>
-    
-  {/* <TextToSpeech/> */}
+ 
     </>
   );
 }

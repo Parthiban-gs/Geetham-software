@@ -1,0 +1,52 @@
+.Texttospeak-bg-conter{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  } 
+ 
+  .texttospechvol-btton{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+  } 
+
+ .Texttospeak-heading {
+    max-width: 500px;
+    margin-left: 2px;
+    font-size: 13px;
+  } 
+.Texttospeak-time{
+  color: #4285F4;
+    font-weight: bold;
+    font-size: 12px;
+    margin: -28px 0px 0px 50px;
+  }
+
+
+
+  .texttospechstart-btton{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 35px;
+
+  } 
+
+  .texttospechstop-btton{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 35px;
+
+  } 
+  
+  .Texttospeak-icons-btton {
+  margin: 0px 0px 0px 0px ;
+
+    
+  } 
