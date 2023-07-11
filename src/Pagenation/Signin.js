@@ -10,6 +10,9 @@ import SignpageleftSlide1 from "../asset/signpageimg/signpageleftSlide1.svg"
 import SigninpageBusinessNetwork from "../asset/signpageimg/signinpageBusinessNetwork.svg"
 import Centerverticalline from "../asset/centerverticalline.svg"
 import Dreamfoucelogo from "../asset/signpageimg/dreamfoucelogo.svg"
+import KEY from "../asset/Loginpageicon/keyicon.svg"
+import GoogleLOGO from "../asset/Loginpageicon/googleLOGO.svg"
+import FacebookLogo from "../asset/Loginpageicon/facebookLogo.svg"
 import "../Pagenation/Signin.css"
 
 
@@ -118,9 +121,9 @@ function Signin() {
    <div className="loginpage-leftfull">
 
 		 <div style={{ fontFamily: 'Alumni Sans'}} class="d-flex bd-highlight">
-  <h4 class="p-2 flex-fill bd-highlight"><img src={SigninpageBusinessNetwork} alt="image" />I   B U S I N E S S  N E T W O R K </h4>
+  {/* <h4 class="p-2 flex-fill bd-highlight"><img src={SigninpageBusinessNetwork} alt="image" />I   B U S I N E S S  N E T W O R K </h4> */}
   <h4 class="p-2 flex-fill bd-highlight"><img src={Dreamfoucelogo} alt="image" />Dreams focus</h4>
-  <h4 class="p-2 flex-fill bd-highlight">11:47   Thursday - 06, july</h4>
+  {/* <h4 class="p-2 flex-fill bd-highlight">11:47   Thursday - 06, july</h4> */}
 </div>
 </div>
 
@@ -192,45 +195,64 @@ globalized way to fulfil their requirements and services
 
 		<form className="signin-form">
 									<div className="from-row">
-										<div className="col-lg-7">
-											<input type="Select login type"
-											name="Select login type"
 										
-											 placeholder="Select login type" 
-											 className="log-form-control" />
-
-										</div>
-										<div className="col-lg-7">
-											<input type="User name"
-											name="User name"
+										<div className="col-lg-10">
+											<input style={{height:"40px", width:"100%",}} type="User name"
+											name="Enter user name or e-mail "
 										
-											 placeholder="User name" 
+											 placeholder="Enter user name or e-mail " 
 											 className="log-form-control" />
 
 										</div>
 
 									</div>
 									<div className="from-row">
-										<div className="col-lg-7">
-											<input type="password" 
+										<div className="col-lg-10">
+											<input style={{height:"40px", width:"100%",}} type="password" 
 											name="password"
 										
-											placeholder="******"
+											placeholder="Enter password "
 											 className="log-form-control" />
 
 										</div>
-
+										
+									</div >
+									
+								
+									<div >
+                                     <div style={{display:"flex", paddingTop:"9px"}}>                                    
+									<div><button  className='signin-forgetpas' ><span style={{fontSize:'1rem', fontWeight:"500",fontFamily: 'Alumni Sans'}} >
+                          <img style={{height:"13px",width:"13px",fontWeight:"bold"}} src={KEY} alt="image"/>
+						  Forgot password  </span></button></div>
+									<div style={{paddingLeft:"130px", paddingtop:"0px"}}>
+									<input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+								<label class="form-check-label" for="exampleCheck1"><h6 style={{fontSize:'1rem', fontWeight:"500",fontFamily: 'Alumni Sans' }}>Remember me</h6></label>
 									</div>
-									<div className="from-row">
-										<div className="col-lg-7">
-											<button type="submit" 
-											className="login-btn1">SIGN IN</button>
-										</div>
-									</div>
+									</div> 
+								   </div>	
 
-									<p className="log-do-not-acc">Don't have an account? </p>
-									<Link to="/Register" className="log-rigister"> Create account</Link>
-									<br />
+								  
+								   <div className="log-botton"> <button className="login-botton">Login</button></div>
+
+							<div style={{paddingTop:"10px",paddingLeft:"70px"}}>   <p style={{fontSize:'1rem', fontWeight:"500",fontFamily: 'Alumni Sans'}}>If you don’t have an account?<a style={{fontSize:'1rem', fontWeight:"bloder",fontFamily: 'Alumni Sans',color:"#4285F4"}}>Create </a>  </p></div>
+
+							<div className="log-or-line"><hr></hr></div><span className="log-or-desine" >or</span>	
+							                         
+
+							<div className="google-fb-botton">
+								<button style={{width:"350px",backgroundColor:"transparent", borderRadius:"8px"}}> <img src={GoogleLOGO} alt="img"/>Login with Google</button>
+								                <br/>
+								                <br/>
+								                
+								               
+								<button style={{width:"350px",backgroundColor:"transparent", borderRadius:"8px"}}> <img src={FacebookLogo} alt="img"/>Login with Facebook</button>
+							</div>
+
+                                    <a style={{ paddingLeft:"90px", fontSize:'1rem', fontWeight:"bloder",fontFamily: 'Alumni Sans',color:"#4285F4"}}>Learn more? <span style={{fontFamily: 'Alumni Sans',color:'black'}}>about Dreams Focus</span></a>
+                                                                                          <br/>
+                                                                                        
+
+                                   <h6 ><img style={{ paddingLeft:"30px",}} src={SigninpageBusinessNetwork} alt="img"/> I   B U S I N E S S    N E T W O R K </h6>
 
 
 

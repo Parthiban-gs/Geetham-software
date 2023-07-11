@@ -46,6 +46,8 @@ import { faSmile, faBookmark } from '@fortawesome/free-solid-svg-icons';
 import Translate from '../Smallcomponent/TranslateLanguage/Translate';
 import SpeakerIcon from '../asset/SpeakerIcon.svg';
 import Dateandtimefronticon from '../asset/maprightside-icon/dateandtimefronticon.svg';
+import Text2SpeechMulitLanguage from "../Smallcomponent/Text2SpeechMulitLanguage/Text2SpeechMulitLanguage";
+
 
 library.add(faSmile, faBookmark, faBell);
 
@@ -493,25 +495,31 @@ function MapRightside() {
                                                                   <br />
                                                                   <br />
                                                                   <br />
-                                                                  <Voice/>
+                                                                  {/* <Voice/> */}
+
+
+                                                                  <p style={{fontSize:"14px", fontFamily: 'Alumni Sans'}}>{text}</p>
+
+                                                                      <div className='map-right-readmore'>
+                  
+                                                                        {isShowMore && (
+                                                                              <p  style={{fontSize:"14px", fontFamily: 'Alumni Sans'}}>Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";</p>
+
+
+                                                                        )} <a style={{color: "#4285F4", paddingBottom: "20px" }} onClick={toggleReadMoreLess}>
+                                                                              {isShowMore ? "Read Less" : "Read More"}
+                                                                        </a>
+
+
+                                                                  </div>
+                                                                 <Text2SpeechMulitLanguage  text={text}/>
 
                                                                   {/* <p cl>  Core java, Advance java, Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service.."  Core java, Advance java, </p> */}
                                                                   <br />
                                                                   <br />
                                                                   <br />
                                                                   <br />
-                                                                  <div className='map-right-readmore'>
-                  
-                                                                        {isShowMore && (
-                                                                              <p>Python, Angular, React js, Node Js,Manual Testing, Backend developer,Data base admin, ruby on rails, AIML, Big Data, Algorithm, Wire frame, Cloud computing, DevOpsSales force CRM, Scrum, IoT, Embedded, Robotics, Micro servic Core java, Advance java, PythonAngular, React js, Node Js, Manual Testing, Backend developer, Data base admin, ruby rails, AIMLBig Data, Algorithm, Wire frame, Cloud computing, DevOps, Sales force CRM, Scrum, Embedded, Robotics, Micro service..";</p>
-
-
-                                                                        )} <a style={{ color: "blur", paddingBottom: "20px" }} onClick={toggleReadMoreLess}>
-                                                                              {isShowMore ? "Read Less" : "Read More"}
-                                                                        </a>
-
-
-                                                                  </div>
+                                                                  
 
 
 
